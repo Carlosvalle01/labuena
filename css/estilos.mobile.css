@@ -1,0 +1,167 @@
+.header{
+    grid-template-columns: 2fr 1fr;
+    padding: 1.5em;
+  }
+
+  
+.logo {
+    font-size: 2em;
+    padding:0.5em ;  
+}
+.navigation {
+    margin-right: 2em;
+}
+.menu {
+    flex-direction: column;
+    position: absolute;
+    background: rgb(255, 255, 255,0.88);
+     /* border-top: 2px solid rgb(236, 236, 236);  */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    align-items: center;
+    width: 100%;
+    top:10em;
+    left:0;
+    max-height: 0px;
+    backdrop-filter: blur(7px); /* Efecto de desenfoque */
+
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  visibility: hidden;
+  }
+  #hamb-check:checked ~ .menu {
+    visibility: visible;
+    max-height: 500px; /* Altura máxima del menú */
+    transition: max-height 0.5s ease;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr ;
+
+}
+
+.contenedor__titulo{
+  margin-top: 100px;
+    font-size: 2vw;
+    transition: margin 0.5s, font-size 0.5s;
+    
+    }
+    .contenedor__texto{
+      transition: margin 0.5s, font-size 0.5s;
+      }
+      .gallery_WPT1 {
+        grid-template-columns:1fr;
+    }
+    .gallery_WPT1 img {
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+    
+    }
+    .img--small {
+      margin-top: 0;
+    }
+    .gallery_WPT2 {
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .gallery_WPT2 img {
+    margin-bottom: 10px;
+    }
+    .gallery_WPT3 {
+      overflow: hidden;
+      display: flex;
+    
+      padding-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    }
+    .gallery_HT1 {
+        grid-template-columns: 1fr;
+      }
+      .img--pendrive {
+      margin-top: 20px;
+      }
+      .gallery_TBC1 {
+        grid-template-columns: 1fr;
+      }
+      .gallery_C3 {
+        overflow: hidden;
+        display: grid;
+        grid-gap: 10px;
+        padding-top: 0px;
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .gallery_C3 .card {
+        display: inline-block; /* Ajusta el contenedor al ancho de la imagen */
+        height: auto; /* Establece una altura fija para las tarjetas */
+        width: 100%;
+      }
+      
+      .gallery_C3 img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .gallery_C2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    
+    
+      }
+      .gallery_J2 {
+
+        grid-template-columns: 1fr;
+   }
+   .gallery_S2 {
+    grid-template-columns: 1fr ;
+  }
+
+
+
+
+
+
+
+   /* HAMBURGUESA */
+
+
+.bars__menu{
+    width: 30px;
+    /*height: 30px;*/
+    cursor: pointer;
+    display: block;
+    margin-bottom: 3px;
+
+}
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px); 
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px; 
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+/* Estilos para el menú abierto */
